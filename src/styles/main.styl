@@ -1,0 +1,43 @@
+@import 'nib'
+
+normalize-css()
+global-reset()
+
+// Variables
+$black     = #0c111a
+$grey      = #1b1b23
+$white     = #fafafa
+$neptune   = #769dbb
+$danube    = #6489bd
+$funblue   = #354f7c
+$blueygrey = #d9eef5
+$hoki      = #658188
+$onahau    = #c7eaf5
+
+$body-background-color       = $grey
+
+$header-background-color     = $black
+$navbar-background-color     = $black
+$header-btn-background-color = $black
+$header-font-color           = $white
+$header-background-color--light     = $white
+$navbar-background-color--light     = $white
+$header-btn-background-color--light = $white
+$header-font-color--light           = $black
+
+$features-background-color        = $white
+$features--hover-background-color = $blueygrey
+$features-border-left-color       = $hoki
+$features-border-bottom-color     = $hoki
+$features--even-border-left-color = $neptune
+
+//
+
+body
+  font-family 'Raleway', sans-serif
+  font-size 16px
+  background-color $body-background-color
+
+@import 'header'
+@import 'main-image'
+@import 'features'

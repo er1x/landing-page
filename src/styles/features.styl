@@ -1,0 +1,23 @@
+.features
+  background-color $features-background-color
+  &-feature
+    padding 1.75em
+    border-left 4px solid $features-border-left-color
+    border-bottom 1px solid $features-border-bottom-color
+    color $black
+    &:hover
+      background-color $features--hover-background-color
+    &:nth-child(even)
+      border-left 4px solid $features--even-border-left-color
+    h3
+      font-size 1.25em
+      font-weight bold
+      margin-bottom 1em
+
+@media (min-width:768px)
+  .features
+    display flex
+    max-width 980px
+    margin 1em auto
+    &-feature
+      width 25%
